@@ -23,3 +23,10 @@ Struct count
 Structs[] Structures (struct_def, data[var_count] = (var[var_count]))
 Function count
 Functions[] function (locals_count, var[var_count], ret_type, 2b max stack, code size, code[])
+
+# OPCODES
+0x:name : agrc, type : stack state : Desc
+00:lp_4 : 1, index   : null -> 4b  : pull 4 bytes from the num32 pool at index
+01:lp_8 : 1, index   : null -> 8b  : pull 8 bytes from the num64 pool at index
+02:lp_4x: 2, index   : null -> 4b  : pull 4 bytes from the num32 pool at index extended
+03:lp_8x: 2, index   : null -> 8b  : pull 8 bytes from the num64 pool at index extended
